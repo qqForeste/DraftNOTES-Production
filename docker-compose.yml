@@ -1,0 +1,89 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: draftnotes_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-draftnotes}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-draftnotes}
+      POSTGRES_DB: ${POSTGRES_DB:-draftnotes}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      # psql too, pg_isready exits 0 for a role that does not exist
+      test: ["CMD-SHELL", "psql -U $${POSTGRES_USER} -d $${POSTGRES_DB} -c 'select 1' > /dev/null"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    container_name: draftnotes_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # profile "full" only, so plain `docker compose up -d` still just starts the
+  # databases and you keep running uvicorn and arq on the host.
+  migrate:
+    build: ./backend
+    profiles: ["full"]
+    command: ["alembic", "upgrade", "head"]
+    env_file:
+      - path: ./backend/.env
+        required: false
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-draftnotes}:${POSTGRES_PASSWORD:-draftnotes}@postgres:5432/${POSTGRES_DB:-draftnotes}
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  api:
+    build: ./backend
+    profiles: ["full"]
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    env_file:
+      - path: ./backend/.env
+        required: false
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-draftnotes}:${POSTGRES_PASSWORD:-draftnotes}@postgres:5432/${POSTGRES_DB:-draftnotes}
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+
+  worker:
+    build: ./backend
+    profiles: ["full"]
+    restart: unless-stopped
+    # never scale past 1, the rate limiter is in-process
+    command: ["arq", "app.worker.WorkerSettings"]
+    env_file:
+      - path: ./backend/.env
+        required: false
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-draftnotes}:${POSTGRES_PASSWORD:-draftnotes}@postgres:5432/${POSTGRES_DB:-draftnotes}
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+  redisdata:
