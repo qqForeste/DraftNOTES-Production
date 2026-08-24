@@ -1,0 +1,958 @@
+{
+  "metadata": {
+    "dataVersion": "2",
+    "matchId": "EUW1_6800000001",
+    "participants": [
+      "puuid-100-top",
+      "puuid-100-jungle",
+      "puuid-100-middle",
+      "puuid-100-bottom",
+      "puuid-100-utility",
+      "puuid-200-top",
+      "puuid-200-jungle",
+      "puuid-200-middle",
+      "puuid-200-bottom",
+      "puuid-200-utility"
+    ]
+  },
+  "info": {
+    "gameCreation": 1723800000000,
+    "gameDuration": 1850,
+    "gameId": 6800000001,
+    "gameVersion": "14.16.567.8901",
+    "queueId": 420,
+    "platformId": "EUW1",
+    "participants": [
+      {
+        "puuid": "puuid-100-top",
+        "riotIdGameName": "Player0",
+        "riotIdTagline": "NA0",
+        "summonerName": "Player0",
+        "championId": 100,
+        "champLevel": 15,
+        "teamId": 100,
+        "teamPosition": "TOP",
+        "win": true,
+        "kills": 4,
+        "deaths": 2,
+        "assists": 6,
+        "totalMinionsKilled": 140,
+        "neutralMinionsKilled": 10,
+        "goldEarned": 10000,
+        "totalDamageDealtToChampions": 15000,
+        "item0": 3020,
+        "item1": 3157,
+        "item2": 3135,
+        "item3": 0,
+        "item4": 0,
+        "item5": 0,
+        "item6": 3040,
+        "roleBoundItem": 1220,
+        "summoner1Id": 4,
+        "summoner2Id": 12,
+        "doubleKills": 1,
+        "tripleKills": 0,
+        "quadraKills": 0,
+        "pentaKills": 0,
+        "wardsPlaced": 8,
+        "visionWardsBoughtInGame": 2,
+        "profileIcon": 4568,
+        "perks": {
+          "statPerks": {
+            "offense": 5008,
+            "flex": 5008,
+            "defense": 5001
+          },
+          "styles": [
+            {
+              "description": "primaryStyle",
+              "style": 8000,
+              "selections": [
+                {
+                  "perk": 8005,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9111,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9104,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8014,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            },
+            {
+              "description": "subStyle",
+              "style": 8100,
+              "selections": [
+                {
+                  "perk": 8126,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8138,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "puuid": "puuid-100-jungle",
+        "riotIdGameName": "Player1",
+        "riotIdTagline": "NA1",
+        "summonerName": "Player1",
+        "championId": 101,
+        "champLevel": 16,
+        "teamId": 100,
+        "teamPosition": "JUNGLE",
+        "win": true,
+        "kills": 5,
+        "deaths": 3,
+        "assists": 7,
+        "totalMinionsKilled": 141,
+        "neutralMinionsKilled": 11,
+        "goldEarned": 10500,
+        "totalDamageDealtToChampions": 16000,
+        "item0": 3020,
+        "item1": 3157,
+        "item2": 3135,
+        "item3": 0,
+        "item4": 0,
+        "item5": 0,
+        "item6": 3040,
+        "roleBoundItem": 1204,
+        "summoner1Id": 4,
+        "summoner2Id": 12,
+        "doubleKills": 0,
+        "tripleKills": 0,
+        "quadraKills": 0,
+        "pentaKills": 0,
+        "wardsPlaced": 9,
+        "visionWardsBoughtInGame": 2,
+        "profileIcon": 4568,
+        "perks": {
+          "statPerks": {
+            "offense": 5008,
+            "flex": 5008,
+            "defense": 5001
+          },
+          "styles": [
+            {
+              "description": "primaryStyle",
+              "style": 8000,
+              "selections": [
+                {
+                  "perk": 8006,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9111,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9104,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8014,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            },
+            {
+              "description": "subStyle",
+              "style": 8100,
+              "selections": [
+                {
+                  "perk": 8126,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8138,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "puuid": "puuid-100-middle",
+        "riotIdGameName": "Player2",
+        "riotIdTagline": "NA2",
+        "summonerName": "Player2",
+        "championId": 102,
+        "champLevel": 17,
+        "teamId": 100,
+        "teamPosition": "MIDDLE",
+        "win": true,
+        "kills": 6,
+        "deaths": 4,
+        "assists": 8,
+        "totalMinionsKilled": 142,
+        "neutralMinionsKilled": 12,
+        "goldEarned": 11000,
+        "totalDamageDealtToChampions": 17000,
+        "item0": 3020,
+        "item1": 3157,
+        "item2": 3135,
+        "item3": 0,
+        "item4": 0,
+        "item5": 0,
+        "item6": 3040,
+        "roleBoundItem": 1206,
+        "summoner1Id": 4,
+        "summoner2Id": 12,
+        "doubleKills": 0,
+        "tripleKills": 0,
+        "quadraKills": 0,
+        "pentaKills": 0,
+        "wardsPlaced": 10,
+        "visionWardsBoughtInGame": 2,
+        "profileIcon": 4568,
+        "perks": {
+          "statPerks": {
+            "offense": 5008,
+            "flex": 5008,
+            "defense": 5001
+          },
+          "styles": [
+            {
+              "description": "primaryStyle",
+              "style": 8000,
+              "selections": [
+                {
+                  "perk": 8007,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9111,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9104,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8014,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            },
+            {
+              "description": "subStyle",
+              "style": 8100,
+              "selections": [
+                {
+                  "perk": 8126,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8138,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "puuid": "puuid-100-bottom",
+        "riotIdGameName": "Player3",
+        "riotIdTagline": "NA3",
+        "summonerName": "Player3",
+        "championId": 103,
+        "champLevel": 18,
+        "teamId": 100,
+        "teamPosition": "BOTTOM",
+        "win": true,
+        "kills": 7,
+        "deaths": 2,
+        "assists": 9,
+        "totalMinionsKilled": 143,
+        "neutralMinionsKilled": 13,
+        "goldEarned": 11500,
+        "totalDamageDealtToChampions": 18000,
+        "item0": 3020,
+        "item1": 3157,
+        "item2": 3135,
+        "item3": 0,
+        "item4": 0,
+        "item5": 0,
+        "item6": 3040,
+        "roleBoundItem": 3006,
+        "summoner1Id": 4,
+        "summoner2Id": 12,
+        "doubleKills": 0,
+        "tripleKills": 0,
+        "quadraKills": 0,
+        "pentaKills": 0,
+        "wardsPlaced": 11,
+        "visionWardsBoughtInGame": 2,
+        "profileIcon": 4568,
+        "perks": {
+          "statPerks": {
+            "offense": 5008,
+            "flex": 5008,
+            "defense": 5001
+          },
+          "styles": [
+            {
+              "description": "primaryStyle",
+              "style": 8000,
+              "selections": [
+                {
+                  "perk": 8008,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9111,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9104,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8014,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            },
+            {
+              "description": "subStyle",
+              "style": 8100,
+              "selections": [
+                {
+                  "perk": 8126,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8138,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "puuid": "puuid-100-utility",
+        "riotIdGameName": "Player4",
+        "riotIdTagline": "NA4",
+        "summonerName": "Player4",
+        "championId": 104,
+        "champLevel": 19,
+        "teamId": 100,
+        "teamPosition": "UTILITY",
+        "win": true,
+        "kills": 8,
+        "deaths": 3,
+        "assists": 10,
+        "totalMinionsKilled": 144,
+        "neutralMinionsKilled": 14,
+        "goldEarned": 12000,
+        "totalDamageDealtToChampions": 19000,
+        "item0": 3020,
+        "item1": 3157,
+        "item2": 3135,
+        "item3": 0,
+        "item4": 0,
+        "item5": 0,
+        "item6": 3040,
+        "roleBoundItem": 2055,
+        "summoner1Id": 4,
+        "summoner2Id": 12,
+        "doubleKills": 0,
+        "tripleKills": 0,
+        "quadraKills": 0,
+        "pentaKills": 0,
+        "wardsPlaced": 12,
+        "visionWardsBoughtInGame": 2,
+        "profileIcon": 4568,
+        "perks": {
+          "statPerks": {
+            "offense": 5008,
+            "flex": 5008,
+            "defense": 5001
+          },
+          "styles": [
+            {
+              "description": "primaryStyle",
+              "style": 8000,
+              "selections": [
+                {
+                  "perk": 8009,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9111,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9104,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8014,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            },
+            {
+              "description": "subStyle",
+              "style": 8100,
+              "selections": [
+                {
+                  "perk": 8126,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8138,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "puuid": "puuid-200-top",
+        "riotIdGameName": "Player5",
+        "riotIdTagline": "NA5",
+        "summonerName": "Player5",
+        "championId": 105,
+        "champLevel": 20,
+        "teamId": 200,
+        "teamPosition": "TOP",
+        "win": false,
+        "kills": 9,
+        "deaths": 4,
+        "assists": 11,
+        "totalMinionsKilled": 145,
+        "neutralMinionsKilled": 15,
+        "goldEarned": 12500,
+        "totalDamageDealtToChampions": 20000,
+        "item0": 3020,
+        "item1": 3157,
+        "item2": 3135,
+        "item3": 0,
+        "item4": 0,
+        "item5": 0,
+        "item6": 3040,
+        "roleBoundItem": 1220,
+        "summoner1Id": 4,
+        "summoner2Id": 12,
+        "doubleKills": 0,
+        "tripleKills": 0,
+        "quadraKills": 0,
+        "pentaKills": 0,
+        "wardsPlaced": 13,
+        "visionWardsBoughtInGame": 2,
+        "profileIcon": 4568,
+        "perks": {
+          "statPerks": {
+            "offense": 5008,
+            "flex": 5008,
+            "defense": 5001
+          },
+          "styles": [
+            {
+              "description": "primaryStyle",
+              "style": 8000,
+              "selections": [
+                {
+                  "perk": 8010,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9111,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9104,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8014,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            },
+            {
+              "description": "subStyle",
+              "style": 8100,
+              "selections": [
+                {
+                  "perk": 8126,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8138,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "puuid": "puuid-200-jungle",
+        "riotIdGameName": "Player6",
+        "riotIdTagline": "NA6",
+        "summonerName": "Player6",
+        "championId": 106,
+        "champLevel": 21,
+        "teamId": 200,
+        "teamPosition": "JUNGLE",
+        "win": false,
+        "kills": 10,
+        "deaths": 2,
+        "assists": 12,
+        "totalMinionsKilled": 146,
+        "neutralMinionsKilled": 16,
+        "goldEarned": 13000,
+        "totalDamageDealtToChampions": 21000,
+        "item0": 3020,
+        "item1": 3157,
+        "item2": 3135,
+        "item3": 0,
+        "item4": 0,
+        "item5": 0,
+        "item6": 3040,
+        "roleBoundItem": 1204,
+        "summoner1Id": 4,
+        "summoner2Id": 12,
+        "doubleKills": 0,
+        "tripleKills": 0,
+        "quadraKills": 0,
+        "pentaKills": 0,
+        "wardsPlaced": 14,
+        "visionWardsBoughtInGame": 2,
+        "profileIcon": 4568,
+        "perks": {
+          "statPerks": {
+            "offense": 5008,
+            "flex": 5008,
+            "defense": 5001
+          },
+          "styles": [
+            {
+              "description": "primaryStyle",
+              "style": 8000,
+              "selections": [
+                {
+                  "perk": 8011,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9111,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9104,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8014,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            },
+            {
+              "description": "subStyle",
+              "style": 8100,
+              "selections": [
+                {
+                  "perk": 8126,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8138,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "puuid": "puuid-200-middle",
+        "riotIdGameName": "Player7",
+        "riotIdTagline": "NA7",
+        "summonerName": "Player7",
+        "championId": 107,
+        "champLevel": 22,
+        "teamId": 200,
+        "teamPosition": "MIDDLE",
+        "win": false,
+        "kills": 11,
+        "deaths": 3,
+        "assists": 13,
+        "totalMinionsKilled": 147,
+        "neutralMinionsKilled": 17,
+        "goldEarned": 13500,
+        "totalDamageDealtToChampions": 22000,
+        "item0": 3020,
+        "item1": 3157,
+        "item2": 3135,
+        "item3": 0,
+        "item4": 0,
+        "item5": 0,
+        "item6": 3040,
+        "roleBoundItem": 1206,
+        "summoner1Id": 4,
+        "summoner2Id": 12,
+        "doubleKills": 0,
+        "tripleKills": 0,
+        "quadraKills": 0,
+        "pentaKills": 0,
+        "wardsPlaced": 15,
+        "visionWardsBoughtInGame": 2,
+        "profileIcon": 4568,
+        "perks": {
+          "statPerks": {
+            "offense": 5008,
+            "flex": 5008,
+            "defense": 5001
+          },
+          "styles": [
+            {
+              "description": "primaryStyle",
+              "style": 8000,
+              "selections": [
+                {
+                  "perk": 8012,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9111,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9104,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8014,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            },
+            {
+              "description": "subStyle",
+              "style": 8100,
+              "selections": [
+                {
+                  "perk": 8126,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8138,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "puuid": "puuid-200-bottom",
+        "riotIdGameName": "Player8",
+        "riotIdTagline": "NA8",
+        "summonerName": "Player8",
+        "championId": 108,
+        "champLevel": 23,
+        "teamId": 200,
+        "teamPosition": "BOTTOM",
+        "win": false,
+        "kills": 12,
+        "deaths": 4,
+        "assists": 14,
+        "totalMinionsKilled": 148,
+        "neutralMinionsKilled": 18,
+        "goldEarned": 14000,
+        "totalDamageDealtToChampions": 23000,
+        "item0": 3020,
+        "item1": 3157,
+        "item2": 3135,
+        "item3": 0,
+        "item4": 0,
+        "item5": 0,
+        "item6": 3040,
+        "roleBoundItem": 3006,
+        "summoner1Id": 4,
+        "summoner2Id": 12,
+        "doubleKills": 0,
+        "tripleKills": 0,
+        "quadraKills": 0,
+        "pentaKills": 0,
+        "wardsPlaced": 16,
+        "visionWardsBoughtInGame": 2,
+        "profileIcon": 4568,
+        "perks": {
+          "statPerks": {
+            "offense": 5008,
+            "flex": 5008,
+            "defense": 5001
+          },
+          "styles": [
+            {
+              "description": "primaryStyle",
+              "style": 8000,
+              "selections": [
+                {
+                  "perk": 8013,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9111,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9104,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8014,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            },
+            {
+              "description": "subStyle",
+              "style": 8100,
+              "selections": [
+                {
+                  "perk": 8126,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8138,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "puuid": "puuid-200-utility",
+        "riotIdGameName": "Player9",
+        "riotIdTagline": "NA9",
+        "summonerName": "Player9",
+        "championId": 109,
+        "champLevel": 24,
+        "teamId": 200,
+        "teamPosition": "UTILITY",
+        "win": false,
+        "kills": 13,
+        "deaths": 2,
+        "assists": 15,
+        "totalMinionsKilled": 149,
+        "neutralMinionsKilled": 19,
+        "goldEarned": 14500,
+        "totalDamageDealtToChampions": 24000,
+        "item0": 3020,
+        "item1": 3157,
+        "item2": 3135,
+        "item3": 0,
+        "item4": 0,
+        "item5": 0,
+        "item6": 3040,
+        "roleBoundItem": 2055,
+        "summoner1Id": 4,
+        "summoner2Id": 12,
+        "doubleKills": 0,
+        "tripleKills": 0,
+        "quadraKills": 0,
+        "pentaKills": 0,
+        "wardsPlaced": 17,
+        "visionWardsBoughtInGame": 2,
+        "profileIcon": 4568,
+        "perks": {
+          "statPerks": {
+            "offense": 5008,
+            "flex": 5008,
+            "defense": 5001
+          },
+          "styles": [
+            {
+              "description": "primaryStyle",
+              "style": 8000,
+              "selections": [
+                {
+                  "perk": 8014,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9111,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 9104,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8014,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            },
+            {
+              "description": "subStyle",
+              "style": 8100,
+              "selections": [
+                {
+                  "perk": 8126,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                },
+                {
+                  "perk": 8138,
+                  "var1": 0,
+                  "var2": 0,
+                  "var3": 0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "teams": [
+      {
+        "teamId": 100,
+        "win": true
+      },
+      {
+        "teamId": 200,
+        "win": false
+      }
+    ]
+  }
+}
