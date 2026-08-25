@@ -1,0 +1,616 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Helvetica, "Helvetica Neue", Arial, sans-serif;
+
+  --color-page: #0d1116;
+  --color-header: #151b22;
+  --color-header-border: #232c35;
+  --color-card: #161c23;
+  --color-card-border: #262e36;
+  --color-inset: #0e1419;
+  --color-inset-alt: #0f141a;
+  --color-panel: #12181e;
+  --color-chip: #1b232b;
+  --color-chip-border: #2a333d;
+
+  --color-text-primary: #e6ebef;
+  --color-text-headline: #f2f6f9;
+  --color-text-secondary: #8d9aa6;
+  --color-text-secondary-2: #9fb0bd;
+  --color-text-secondary-3: #c3ced8;
+  --color-text-secondary-4: #b6c3cd;
+  --color-text-secondary-5: #7f8c98;
+  --color-text-secondary-6: #a9b6c1;
+  --color-text-muted: #5d6a76;
+
+  --color-accent: #1ea1f7;
+
+  --color-win: #1f8ecd;
+  --color-win-bg: #182634;
+  --color-win-border: #25405a;
+  --color-win-text: #63b3ed;
+
+  --color-loss: #ee5a52;
+  --color-loss-bg: #28191c;
+  --color-loss-border: #4a2429;
+  --color-loss-text: #ef7b74;
+
+  --color-divider: #1d242c;
+
+  --radius-card: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+:root[data-theme='ink'] {
+  --color-page: #08090b;
+  --color-header: #0e1013;
+  --color-header-border: #1c2024;
+  --color-card: #0f1114;
+  --color-card-border: #20252a;
+  --color-inset: #050607;
+  --color-inset-alt: #060708;
+  --color-panel: #0b0d0f;
+  --color-chip: #161a1e;
+  --color-chip-border: #262c32;
+  --color-text-primary: #e4eef0;
+  --color-text-headline: #f0f8fa;
+  --color-text-secondary: #87979d;
+  --color-text-secondary-2: #9aacb2;
+  --color-text-secondary-3: #bdd0d5;
+  --color-text-secondary-4: #aec2c8;
+  --color-text-secondary-5: #77878d;
+  --color-text-secondary-6: #a3b6bc;
+  --color-text-muted: #54636a;
+  --color-accent: #22c3d6;
+  --color-divider: #181d21;
+}
+
+
+
+
+
+
+
+:root[data-theme='blush'] {
+  --color-page: #f6eef1;
+  --color-header: #fffbfc;
+  --color-header-border: #eddce2;
+  --color-card: #fffbfc;
+  --color-card-border: #eddce2;
+  --color-inset: #f1e3e7;
+  --color-inset-alt: #efdfe4;
+  --color-panel: #f3e7ea;
+  --color-chip: #f0e0e5;
+  --color-chip-border: #e0c5cd;
+  --color-text-primary: #2b1a20;
+  --color-text-headline: #1c1014;
+  --color-text-secondary: #7a5a63;
+  --color-text-secondary-2: #684a52;
+  --color-text-secondary-3: #452e34;
+  --color-text-secondary-4: #52373e;
+  --color-text-secondary-5: #8c6c74;
+  --color-text-secondary-6: #5c3f46;
+  --color-text-muted: #9c7e87;
+  --color-accent: #c23d72;
+  --color-divider: #ecd9df;
+  --color-win: #1568b0;
+  --color-win-bg: #e6f2fb;
+  --color-win-border: #bcdcf5;
+  --color-win-text: #125a97;
+  --color-loss: #d43c34;
+  --color-loss-bg: #fbe9e8;
+  --color-loss-border: #f3c1bd;
+  --color-loss-text: #b53129;
+}
+
+
+
+
+
+:root[data-theme='crimson'] {
+  --color-page: #08090b;
+  --color-header: #0e1013;
+  --color-header-border: #1c2024;
+  --color-card: #0f1114;
+  --color-card-border: #20252a;
+  --color-inset: #050607;
+  --color-inset-alt: #060708;
+  --color-panel: #0b0d0f;
+  --color-chip: #161a1e;
+  --color-chip-border: #262c32;
+  --color-text-primary: #e4eef0;
+  --color-text-headline: #f0f8fa;
+  --color-text-secondary: #87979d;
+  --color-text-secondary-2: #9aacb2;
+  --color-text-secondary-3: #bdd0d5;
+  --color-text-secondary-4: #aec2c8;
+  --color-text-secondary-5: #77878d;
+  --color-text-secondary-6: #a3b6bc;
+  --color-text-muted: #54636a;
+  --color-accent: #e14b3f;
+  --color-divider: #181d21;
+}
+
+:root[data-theme='amethyst'] {
+  --color-page: #100c17;
+  --color-header: #17111f;
+  --color-header-border: #2a2038;
+  --color-card: #18121f;
+  --color-card-border: #2d2340;
+  --color-inset: #0c0912;
+  --color-inset-alt: #0e0a14;
+  --color-panel: #130e1a;
+  --color-chip: #1f172a;
+  --color-chip-border: #332644;
+  --color-text-primary: #e9e3f2;
+  --color-text-headline: #f4eff9;
+  --color-text-secondary: #9587ab;
+  --color-text-secondary-2: #a898bd;
+  --color-text-secondary-3: #c9bad9;
+  --color-text-secondary-4: #beadd0;
+  --color-text-secondary-5: #87789c;
+  --color-text-secondary-6: #b4a4c6;
+  --color-text-muted: #61546f;
+  --color-accent: #8b5cf6;
+  --color-divider: #241a33;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root[data-theme='chalk'] {
+  --color-page: #f0f0f0;
+  --color-header: #fafafa;
+  --color-header-border: #dcdcdc;
+  --color-card: #f7f7f7;
+  --color-card-border: #dcdcdc;
+  --color-inset: #e9e9e9;
+  --color-inset-alt: #e6e6e6;
+  --color-panel: #eeeeee;
+  --color-chip: #e8e8e8;
+  --color-chip-border: #cfcfcf;
+  --color-text-primary: #1a1a1a;
+  --color-text-headline: #0d0d0d;
+  --color-text-secondary: #5c5c5c;
+  --color-text-secondary-2: #4a4a4a;
+  --color-text-secondary-3: #303030;
+  --color-text-secondary-4: #3a3a3a;
+  --color-text-secondary-5: #6a6a6a;
+  --color-text-secondary-6: #3e3e3e;
+  --color-text-muted: #8c8c8c;
+  --color-accent: #2b2b2b;
+  --color-divider: #dedede;
+  --color-win: #1568b0;
+  --color-win-bg: #e6f2fb;
+  --color-win-border: #bcdcf5;
+  --color-win-text: #125a97;
+  --color-loss: #d43c34;
+  --color-loss-bg: #fbe9e8;
+  --color-loss-border: #f3c1bd;
+  --color-loss-text: #b53129;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root[data-theme='fern'] {
+  --color-page: #eaf0ea;
+  --color-header: #f8fbf8;
+  --color-header-border: #d3e2d3;
+  --color-card: #f4f8f4;
+  --color-card-border: #d3e2d3;
+  --color-inset: #dfeadf;
+  --color-inset-alt: #dce7dc;
+  --color-panel: #e5eee5;
+  --color-chip: #dfeadf;
+  --color-chip-border: #c1d6c1;
+  --color-text-primary: #172318;
+  --color-text-headline: #0c160d;
+  --color-text-secondary: #4c6b4e;
+  --color-text-secondary-2: #3c593e;
+  --color-text-secondary-3: #263a27;
+  --color-text-secondary-4: #304631;
+  --color-text-secondary-5: #587a5a;
+  --color-text-secondary-6: #345035;
+  --color-text-muted: #83a385;
+  --color-accent: #5a8a5f;
+  --color-divider: #d5e5d5;
+  --color-win: #1568b0;
+  --color-win-bg: #e6f2fb;
+  --color-win-border: #bcdcf5;
+  --color-win-text: #125a97;
+  --color-loss: #d43c34;
+  --color-loss-bg: #fbe9e8;
+  --color-loss-border: #f3c1bd;
+  --color-loss-text: #b53129;
+}
+
+:root[data-theme='obsidian'] {
+  --color-page: #060606;
+  --color-header: #0c0c0c;
+  --color-header-border: #1e1e1e;
+  --color-card: #0d0d0d;
+  --color-card-border: #202020;
+  --color-inset: #030303;
+  --color-inset-alt: #040404;
+  --color-panel: #090909;
+  --color-chip: #151515;
+  --color-chip-border: #262626;
+  --color-text-primary: #ececec;
+  --color-text-headline: #f6f6f6;
+  --color-text-secondary: #929292;
+  --color-text-secondary-2: #a3a3a3;
+  --color-text-secondary-3: #c6c6c6;
+  --color-text-secondary-4: #b8b8b8;
+  --color-text-secondary-5: #828282;
+  --color-text-secondary-6: #b2b2b2;
+  --color-text-muted: #5a5a5a;
+  --color-accent: #cfd7de;
+  --color-divider: #191919;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root[data-theme='wisteria'] {
+  --color-page: #f0edf4;
+  --color-header: #f9f7fb;
+  --color-header-border: #dcd4e6;
+  --color-card: #f6f3fa;
+  --color-card-border: #dcd4e6;
+  --color-inset: #e6dfef;
+  --color-inset-alt: #e3dcec;
+  --color-panel: #ece6f2;
+  --color-chip: #e3dcec;
+  --color-chip-border: #cabdd9;
+  --color-text-primary: #201a29;
+  --color-text-headline: #140f1a;
+  --color-text-secondary: #665a78;
+  --color-text-secondary-2: #554966;
+  --color-text-secondary-3: #372e43;
+  --color-text-secondary-4: #41364f;
+  --color-text-secondary-5: #776a88;
+  --color-text-secondary-6: #493c58;
+  --color-text-muted: #9c8daf;
+  --color-accent: #7452a8;
+  --color-divider: #ddd3ea;
+  --color-win: #1568b0;
+  --color-win-bg: #e6f2fb;
+  --color-win-border: #bcdcf5;
+  --color-win-text: #125a97;
+  --color-loss: #d43c34;
+  --color-loss-bg: #fbe9e8;
+  --color-loss-border: #f3c1bd;
+  --color-loss-text: #b53129;
+}
+
+
+
+
+
+:root[data-theme='glacier'] {
+  --color-page: #e8f1f5;
+  --color-header: #f6fafc;
+  --color-header-border: #c9e0e8;
+  --color-card: #f2f8fa;
+  --color-card-border: #c9e0e8;
+  --color-inset: #d9ecf1;
+  --color-inset-alt: #d5e9ee;
+  --color-panel: #e0eff3;
+  --color-chip: #d7ecf1;
+  --color-chip-border: #b5d5de;
+  --color-text-primary: #0f2328;
+  --color-text-headline: #071619;
+  --color-text-secondary: #3f6873;
+  --color-text-secondary-2: #2e5661;
+  --color-text-secondary-3: #1a3c45;
+  --color-text-secondary-4: #234750;
+  --color-text-secondary-5: #4f7883;
+  --color-text-secondary-6: #274d57;
+  --color-text-muted: #7ba3ac;
+  --color-accent: #1f9dc4;
+  --color-divider: #c3dee6;
+  --color-win: #1568b0;
+  --color-win-bg: #e6f2fb;
+  --color-win-border: #bcdcf5;
+  --color-win-text: #125a97;
+  --color-loss: #d43c34;
+  --color-loss-bg: #fbe9e8;
+  --color-loss-border: #f3c1bd;
+  --color-loss-text: #b53129;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root[data-theme='cardinal'] {
+  --color-page: #f0f0f0;
+  --color-header: #fafafa;
+  --color-header-border: #dcdcdc;
+  --color-card: #f7f7f7;
+  --color-card-border: #dcdcdc;
+  --color-inset: #e9e9e9;
+  --color-inset-alt: #e6e6e6;
+  --color-panel: #eeeeee;
+  --color-chip: #e8e8e8;
+  --color-chip-border: #cfcfcf;
+  --color-text-primary: #1a1a1a;
+  --color-text-headline: #0d0d0d;
+  --color-text-secondary: #5c5c5c;
+  --color-text-secondary-2: #4a4a4a;
+  --color-text-secondary-3: #303030;
+  --color-text-secondary-4: #3a3a3a;
+  --color-text-secondary-5: #6a6a6a;
+  --color-text-secondary-6: #3e3e3e;
+  --color-text-muted: #8c8c8c;
+  --color-accent: #e14b3f;
+  --color-divider: #dedede;
+  --color-win: #1568b0;
+  --color-win-bg: #e6f2fb;
+  --color-win-border: #bcdcf5;
+  --color-win-text: #125a97;
+  --color-loss: #d43c34;
+  --color-loss-bg: #fbe9e8;
+  --color-loss-border: #f3c1bd;
+  --color-loss-text: #b53129;
+}
+
+:root[data-theme='bracken'] {
+  --color-page: #08090b;
+  --color-header: #0e1013;
+  --color-header-border: #1c2024;
+  --color-card: #0f1114;
+  --color-card-border: #20252a;
+  --color-inset: #050607;
+  --color-inset-alt: #060708;
+  --color-panel: #0b0d0f;
+  --color-chip: #161a1e;
+  --color-chip-border: #262c32;
+  --color-text-primary: #e4eef0;
+  --color-text-headline: #f0f8fa;
+  --color-text-secondary: #87979d;
+  --color-text-secondary-2: #9aacb2;
+  --color-text-secondary-3: #bdd0d5;
+  --color-text-secondary-4: #aec2c8;
+  --color-text-secondary-5: #77878d;
+  --color-text-secondary-6: #a3b6bc;
+  --color-text-muted: #54636a;
+  --color-accent: #5a8a5f;
+  --color-divider: #181d21;
+}
+
+:root[data-theme='rouge'] {
+  --color-page: #08090b;
+  --color-header: #0e1013;
+  --color-header-border: #1c2024;
+  --color-card: #0f1114;
+  --color-card-border: #20252a;
+  --color-inset: #050607;
+  --color-inset-alt: #060708;
+  --color-panel: #0b0d0f;
+  --color-chip: #161a1e;
+  --color-chip-border: #262c32;
+  --color-text-primary: #e4eef0;
+  --color-text-headline: #f0f8fa;
+  --color-text-secondary: #87979d;
+  --color-text-secondary-2: #9aacb2;
+  --color-text-secondary-3: #bdd0d5;
+  --color-text-secondary-4: #aec2c8;
+  --color-text-secondary-5: #77878d;
+  --color-text-secondary-6: #a3b6bc;
+  --color-text-muted: #54636a;
+  --color-accent: #c23d72;
+  --color-divider: #181d21;
+}
+
+body {
+  @apply bg-page text-text-primary font-sans antialiased;
+}
+
+::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* Custom scrollbars everywhere, including dropdowns/menus, instead of the OS default */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-chip-border) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-chip-border);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-text-secondary-5);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Every clickable control shows a pointer by default (browsers only do this
+   for <a>, not <button>), so it doesn't have to be set one component at a
+   time. Explicit per-element cursor classes (e.g. disabled states) still win
+   on specificity. */
+button:not(:disabled),
+[role='button']:not([aria-disabled='true']),
+select,
+summary {
+  cursor: pointer;
+}
+
+button:disabled,
+[role='button'][aria-disabled='true'] {
+  cursor: not-allowed;
+}
