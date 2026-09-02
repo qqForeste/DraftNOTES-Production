@@ -85,8 +85,7 @@ export function LoginPage() {
             </button>
             <p className="mt-2 text-[11px] leading-relaxed text-text-muted">
               Opens a ready-made account with a Pro Player's match history with example
-              notes already written. Explore anything you write is private
-              to this browser session and temporary.
+              notes already written. (Temporary)
             </p>
           </div>
         )}
@@ -102,9 +101,7 @@ export function LoginPage() {
               {guestBusy ? 'Starting…' : 'Continue without logging in'}
             </button>
             <p className="mt-2 text-[11px] leading-relaxed text-text-muted">
-              Sync any Riot ID and start tagging right away. It isn't tied to a real
-              sign-in, so there's no way back into it later. Sign in properly if you
-              want it to stick around.
+              Sync any Riot ID and start tagging right away without logging in. WARNING: No saved stats.
             </p>
           </div>
         )}
