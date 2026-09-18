@@ -4,13 +4,6 @@ A performance review tool for a competitive eSports title.
 
 **Currently live at: https://draftnotes.lol**
 
-
-backend dev: Adi D
-
-
-frontend dev: Alex J
-
-
 ## Use Case / Idea
 Competitive games such as Chess, require thorough review of previous games for a noticable improvement in skill. The best players will go through their games move by move and take notes on mistakes and key moments in their matches to learn.
 
